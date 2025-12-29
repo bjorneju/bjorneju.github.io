@@ -1,0 +1,15 @@
+---
+title: "Proposed EEG measures of consciousness: a systematic, comparative review."
+collection: "publications"
+category: "manuscripts"
+permalink: "https://api.unpaywall.org/v2/10.31234/osf.io/sjm4a?email=<INSERT_YOUR_EMAIL>"
+abstract: "Knowledge of which brain properties are required for consciousness is essential for improving clinical diagnostics and therapy as well as for investigating consciousness per se. The search for such properties has yielded many methods and measures for distinguishing conscious and apparently unconscious brain states. Here, we present a systematic literature review of 255 electroencephalography (EEG)-based measures of consciousness in humans. We show that measures based on signal diversity and event related potentials appear to be the most consistent. Specifically, spectral entropy, Lempel Ziv complexity, and spectral edge frequency, seem most practical, consistent, and reproducible. However, since most studies did not collect current or retrospective subjective reports about experiences, the states of consciousness were usually assessed from behavior. Hence, the ground truth about presence or absence of phenomenological experience in such cases is often uncertain, thus limiting the conclusions that can be drawn. We provide detailed overviews of general categories and specific measures of consciousness, to serve as a basis for further studies and future development."
+excerpt: "TBW"
+date: "2020-01-01"
+venue: ""
+slidesurl: " "
+paperurl: "https://www.semanticscholar.org/paper/56a4e4e3c531ddb226d1089c27bfd5d33f3c5f6c"
+bibtexurl: " "
+citation: "Nilsen et al. (2020), \"Proposed EEG measures of consciousness: a systematic, comparative review.\" in "
+---
+Knowledge of which brain properties are required for consciousness is essential for improving clinical diagnostics and therapy as well as for investigating consciousness per se. The search for such properties has yielded many methods and measures for distinguishing conscious and apparently unconscious brain states. Here, we present a systematic literature review of 255 electroencephalography (EEG)-based measures of consciousness in humans. We show that measures based on signal diversity and event related potentials appear to be the most consistent. Specifically, spectral entropy, Lempel Ziv complexity, and spectral edge frequency, seem most practical, consistent, and reproducible. However, since most studies did not collect current or retrospective subjective reports about experiences, the states of consciousness were usually assessed from behavior. Hence, the ground truth about presence or absence of phenomenological experience in such cases is often uncertain, thus limiting the conclusions that can be drawn. We provide detailed overviews of general categories and specific measures of consciousness, to serve as a basis for further studies and future development.
