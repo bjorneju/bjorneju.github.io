@@ -11,35 +11,50 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Neuroscience of Consciousness, University of Oslo, 2020 (expected)
+* Lecturer in Natural Science, Physics, and Mathematics, Norwegian University of Life Sciences, 2014
+* M.Sc. in Theoretical Neuroscience, Norwegian University of Science and Technology, 2013
+* B.Sc. in Physics, University of Oslo, 2010
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Dec 2023 - Current: Senior researcher and Project Leader
+  * Kongsberg Hospital, Vestre Viken Health Trust
+  * Duties includes: Leading a research project funded by the Norwegian Research Council
+  * Closest leader: Gernot Ernst, PhD, MD
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2019 - 2023: PostDoctoral Researcher (50%)
+  * University of Oslo
+  * Duties included: Carrying out empirical tests of scientific theories of consciousness with human subjects
+  * Supervisor: Prof Johan F. Storm, MD, PhD
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+* 2019 - 2023: PostDoctoral Researcher (50%)
+  * University of Wisconsin - Madison
+  * Duties included: Developing and disseminating a scientific theory of consicousness (see e.g. [IIT-wiki](https://www.iit.wiki).
+  * Supervisor: Prof Giulio Tononi, MD, PhD
+
+* 2019 - 2023: PhD Candidate
+  * University of Oslo
+  * Duties included: Developing and testing objective measures of consciousness with empirical and theoretical studies. 
+  * Supervisor: Prof Johan F. Storm, MD, PhD
+ 
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+
+* Supervision and teaching
+  * Licenced lecturer in natural sciences
+  * supervised several students at MSc and PhD level
+* Experimental planning and execution
+  * Set up and successfully complete complex research projects
+  * supervise novice student through a full research cycle
+* Multidisciplinary collaboration
+  * well versed in team work and leadership of teams with diverse backgrounds
+* Analysis of time-series data, e.g.:
+  * multivariate autoregressive modeling
+  * time-frequency decompositions
+  * causal analysis
+  * graph theory
+  * complexity quantification
 
 Publications
 ======
