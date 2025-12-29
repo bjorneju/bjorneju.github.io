@@ -26,22 +26,22 @@ author:
   avatar           : "profile.png"
   name             : "B.E. Juel, PhD"
   bio              : "I am a teacher and research scientist, with a background in physics and neuroscience, currently studying consciousness"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  location         : "Oslo, Norway"
+  employer         : "Kongsberg Hospital, Vestre Viken Health Trust"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "bjorneju@gmail.com" 
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=vvEltwIAAAAJ&hl=en&inst=4058163445224007304"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0000-0003-0550-581X"
   semantic         : # URL
   ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
+  pubmed           : "https://pubmed.ncbi.nlm.nih.gov/?term=Bj%C3%B8rn+Erik+Juel"
+  researchgate     : "https://www.researchgate.net/profile/Bjorn-Juel?ev=hdr_xprf"
   scopus           : # URL
   zotero           : # URL
 
@@ -50,13 +50,13 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "bjorneju"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : "algarwegian.bsky.social" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -65,7 +65,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : bjørn-erik-juel-86674455
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
