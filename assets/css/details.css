@@ -1,0 +1,39 @@
+/* Category dropdown */
+details {
+  border: 1px solid #d3d3d3;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  background-color: #f9f9f9;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:before {
+  content: "▶";
+  margin-right: 0.5em;
+  transition: transform 0.3s ease;
+}
+
+details[open] summary:before {
+  transform: rotate(90deg);
+}
+
+details[open] {
+  background-color: #f0f0f0;
+}
+
+/* Indent publication items */
+details > .archive__item {
+  margin-left: 1em;
+  padding-left: 0.5em;
+  border-left: 2px solid #ccc;
+  margin-top: 0.5em;
+}
