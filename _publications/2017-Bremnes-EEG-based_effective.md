@@ -1,7 +1,7 @@
 ---
 title: "EEG-based effective connectivity distinguishes between unresponsive states with and without report of conscious experience and correlates with brain complexity"
 collection: "publications"
-category: "manuscripts"
+category: "thesis"
 permalink: ""
 abstract: ""
 excerpt: "TBW"
