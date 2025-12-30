@@ -16,11 +16,11 @@ Bjørn
 
 ---
 
-<p style="text-align:center; font-weight:bold; margin-top:2rem; font-size:1.1rem;">
-⬇ Scroll down for a taste of what I do! ⬇
+<p style="text-align:center; margin-top:8rem; font-size:1.1rem;">
+⬇ Below is some content to get you started ⬇
 </p>
 
-<div style="margin-top:2rem;"></div>
+<div style="margin-top:15rem;"></div>
 
 <div class="homepage-grid">
 
@@ -48,7 +48,7 @@ Bjørn
 
   <!-- Card 3: Video Lecture -->
   <div class="grid-card">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/A4McCxIz7ng?si=AhgeHhqqpt490Mlp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="100%" src="https://www.youtube.com/embed/A4McCxIz7ng?si=AhgeHhqqpt490Mlp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <div class="grid-text">
       <strong>Talks, discussions, and interviews</strong>
       <p>I have been lucky enough to be invited to talk about my favorite topics in a variety of situations. Here is an example that was recorded, where my colleague and I discuss consciousness in Norwegian on a podcast.</p>
