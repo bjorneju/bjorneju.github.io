@@ -102,9 +102,7 @@ publication_category:
   posters:
     title: 'Posters'        
   workshops:
-    title: 'Workshops etc'     
-  conferences:
-    title: 'Conferences'    
+    title: 'Workshops etc'    
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
