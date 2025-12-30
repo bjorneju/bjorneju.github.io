@@ -14,20 +14,20 @@ author_profile: true
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
   {% for category in site.publication_category %}
-    {% assign title_shown = false %}
-    <details>
-      <summary>{{ category[1].title }}</summary>
-      {% for post in site.publications reversed %}
-        {% if post.category != category[0] %}
-          {% continue %}
-        {% endif %}
-        {% unless title_shown %}
-          <hr />
-          {% assign title_shown = true %}
-        {% endunless %}
-        {% include archive-single.html %}
-      {% endfor %}
-    </details>
+    {% assign posts_in_category = site.publications | where: "category", category[0] %}
+    {% if posts_in_category.size > 0 %}
+      <details>
+        <summary>{{ category[1].title }}</summary>
+        {% assign title_shown = false %}
+        {% for post in posts_in_category reversed %}
+          {% unless title_shown %}
+            <hr />
+            {% assign title_shown = true %}
+          {% endunless %}
+          {% include archive-single.html %}
+        {% endfor %}
+      </details>
+    {% endif %}
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}

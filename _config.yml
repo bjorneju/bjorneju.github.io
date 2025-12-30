@@ -91,7 +91,7 @@ publication_category:
     title: 'Book Chapters' 
   conferences:
     title: 'Conference Papers'
-  preprints:
+  preprint:
     title: 'Preprints'     
   thesis:
     title: 'Theses'     
