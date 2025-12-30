@@ -96,7 +96,15 @@ publication_category:
   thesis:
     title: 'Theses'     
   inprep:
-    title: 'In preparation'    
+    title: 'In preparation'        
+  talks:
+    title: 'Talks'     
+  posters:
+    title: 'Posters'        
+  workshops:
+    title: 'Workshops etc'     
+  conferences:
+    title: 'Conferences'    
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
