@@ -12,4 +12,3 @@ paperurl: "https://www.semanticscholar.org/paper/27e744ebce71ec5d4edd17f074e0be2
 bibtexurl: " "
 citation: "Juel et al. (2013), \"Investigating the Consistency and Convexity of Restricted Boltzmann Machine Learning\" in "
 ---
-
