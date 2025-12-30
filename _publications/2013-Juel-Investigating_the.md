@@ -2,7 +2,7 @@
 title: "Investigating the Consistency and Convexity of Restricted Boltzmann Machine Learning"
 collection: "publications"
 category: "thesis"
-permalink: ""
+#permalink: ""
 abstract: ""
 excerpt: "TBW"
 date: "2013-01-01"
