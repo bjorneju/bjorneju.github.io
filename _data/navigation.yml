@@ -11,23 +11,20 @@ main:
   - title: "Home"
     url: /about/
     
-  - title: "Publications"
+  - title: "Academic contributions"
     url: /publications/
 
-  - title: "Conference contributions"
-    url: /talks_posters/    
+  - title: "Projects"
+    url: /projects/    
 
   - title: "Teaching"
     url: /teaching/    
+
+  - title: "Media Appearances"
+    url: /media/    
         
   - title: "Services"
     url: /services/
     
   - title: "CV"
     url: /cv/
-    
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  #- title: "Contact"
-  #  url: /markdown/

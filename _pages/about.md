@@ -11,7 +11,16 @@ I am a teacher and research scientist, with a background in physics and neurosci
 
 Here, you can find some information about my academic past, present, and future. I hope you find something you enjoy, and please feel free to get in touch!
 
+
 Bjørn
+
+---
+
+<p style="text-align:center; font-weight:bold; margin-top:2rem; font-size:1.1rem;">
+⬇ Scroll down for a taste of what I do! ⬇
+</p>
+
+<div style="margin-top:2rem;"></div>
 
 <div class="homepage-grid">
 
@@ -33,13 +42,17 @@ Bjørn
     </a>
     <div class="grid-text">
       <strong>PhD Thesis</strong>
-      <p>An introduction to my current academic interests in neuroscience and consciousness research. The introductory pages of this thesis were written with a lay audience in mind. </p>
+      <p>An introduction to my current academic interests in neuroscience and consciousness research. The introductory pages of this thesis were written with a lay audience in mind.</p>
     </div>
   </div>
 
   <!-- Card 3: Video Lecture -->
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/A4McCxIz7ng?si=AhgeHhqqpt490Mlp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  <strong>Talks, discussions, and interrviews</strong>
-  <p>I have been lucky enough to be invited to talk about my favorite topics in a variety of situations. Here is an example that was recorded, where my colleague and I discuss consciousness in Norwegian on a podcast.</p>
+  <div class="grid-card">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/A4McCxIz7ng?si=AhgeHhqqpt490Mlp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="grid-text">
+      <strong>Talks, discussions, and interviews</strong>
+      <p>I have been lucky enough to be invited to talk about my favorite topics in a variety of situations. Here is an example that was recorded, where my colleague and I discuss consciousness in Norwegian on a podcast.</p>
+    </div>
+  </div>
 
 </div>
