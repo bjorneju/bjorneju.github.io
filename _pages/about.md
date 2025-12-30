@@ -8,9 +8,9 @@ redirect_from:
 ---
 
 I am a teacher and research scientist, with a background in physics and neuroscience, currently studying consciousness. 
-Navigating the pages on this site, you should be able to find some information about my academic past, present, and future. But to get you started, the cards below can take you to some tangible results of my work. 
 
-Hope you find something you enjoy, and please feel free to get in touch!
+Here, you can find some information about my academic past, present, and future. I hope you find something you enjoy, and please feel free to get in touch!
+
 Bjørn
 
 <div class="homepage-grid">
@@ -18,7 +18,7 @@ Bjørn
   <!-- Card 1: IIT Wiki -->
   <div class="grid-card">
     <a href="https://www.iit.wiki/" target="_blank" rel="noopener">
-      <img src="/images/iit-logo.png" alt="IIT Wiki" class="grid-image">
+      <img src="/images/iitwiki.png" alt="IIT Wiki" class="grid-image">
     </a>
     <div class="grid-text">
       <strong>IIT Wiki</strong>
@@ -28,12 +28,12 @@ Bjørn
 
   <!-- Card 2: PhD Thesis -->
   <div class="grid-card">
-    <a href="/files/phd-thesis.pdf" target="_blank" rel="noopener">
+    <a href="https://www.duo.uio.no/bitstream/handle/10852/67903/PhD-Juel-DUO.pdf" target="_blank" rel="noopener">
       <img src="/images/phd-thumbnail.png" alt="PhD Thesis" class="grid-image">
     </a>
     <div class="grid-text">
       <strong>PhD Thesis</strong>
-      <p>An introduction to my current academic interests in neuroscience and consciousness research. The introductory pages were written with a lay audience in mind. </p>
+      <p>An introduction to my current academic interests in neuroscience and consciousness research. The introductory pages of this thesis were written with a lay audience in mind. </p>
     </div>
   </div>
 
