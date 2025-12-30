@@ -93,6 +93,8 @@ publication_category:
     title: 'Conference Papers'
   preprints:
     title: 'Preprints'     
+  thesis:
+    title: 'Theses'     
   inprep:
     title: 'In preparation'    
 
