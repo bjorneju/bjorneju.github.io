@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "air" # the available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "sunrise" # the available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : " "
 title_separator          : " "
 name                     : &name "Bjørn Erik Juel"
@@ -23,7 +23,7 @@ repository               : "https://github.com/bjorneju/bjorneju.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "images/20240120_121759.jpg"
   name             : "B.E. Juel, PhD"
   bio              : "I am a teacher and research scientist, with a background in physics and neuroscience, currently studying consciousness"
   location         : "Oslo, Norway"
