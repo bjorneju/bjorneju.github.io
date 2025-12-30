@@ -23,7 +23,7 @@ repository               : "https://github.com/bjorneju/bjorneju.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/images/20240120_121759.jpg"
+  avatar           : "/20240120_121759.jpg"
   name             : "B.E. Juel, PhD"
   bio              : "I am a teacher and research scientist, with a background in physics and neuroscience, currently studying consciousness"
   location         : "Oslo, Norway"
