@@ -1,10 +1,10 @@
 ---
 permalink: /
-title: "Bjørn Erik Juel"
+title: "Welcome!"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Here is some information about me
+I am a teacher and research scientist, with a background in physics and neuroscience, currently studying consciousness.
