@@ -2,7 +2,7 @@
 title: "Behavioral effects of sub-anesthetic ketamine in a go/no-go task"
 collection: "publications"
 category: "manuscripts"
-permalink: ""
+#permalink: ""
 abstract: "While psychedelic agents are known to have powerful, but largely unexplained, effects on contents of consciousness, there is an increasing interest in the potential clinical usefulness of such drugs for therapy, and legalization is discussed in some countries. Thus, it is relevant to study the effects of psychedelic compounds not only on experience, but also on behavioral performance.Seven healthy participants performed a motor response inhibition task before, during, and after sub-anesthetic doses of intravenously administered ketamine. The infusion rate was individually adjusted to produce noticeable subjective psychedelic effects.We observed no statistically significant impact of sub-anesthetic ketamine on reaction times, omission errors, or post error slowing, relative to the preceding drug-free condition. However, we did observe significant correlations between performance impairment and self-reported, subjective altered states of consciousness, specifically experience of “anxiety” and “complex imagery.”Considering the limited number of participants and large variation in strength of self-reported experiences, further studies with wider ranges of ketamine doses and behavioral tasks are needed to determine the presence and strength of potential behavioral effects."
 excerpt: "TBW"
 date: "2021-01-01"

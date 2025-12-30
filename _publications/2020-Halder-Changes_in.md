@@ -2,7 +2,7 @@
 title: "Changes in measures of consciousness during anaesthesia of one hemisphere (Wada test)"
 collection: "publications"
 category: "manuscripts"
-permalink: ""
+#permalink: ""
 abstract: "Background
 In the Wada test, one hemisphere is selectively anaesthetised by unilateral intracarotid injection of a fast-acting anaesthetic agent. This gives a unique opportunity to observe the functions and physiological activity of one hemisphere while anaesthetising the other, allowing direct comparisons between brain states and hemispheres that are not possible in any other setting.
 Aim

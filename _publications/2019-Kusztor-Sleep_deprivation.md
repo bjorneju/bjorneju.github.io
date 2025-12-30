@@ -2,7 +2,7 @@
 title: "Sleep deprivation differentially affects subcomponents of cognitive control"
 collection: "publications"
 category: "manuscripts"
-permalink: ""
+#permalink: ""
 abstract: "STUDY OBJECTIVES
 Although sleep deprivation has long been known to negatively affect cognitive performance, the exact mechanisms through which it acts and what cognitive domains are affected most is still disputed. The current study provides a theory-driven approach to examine and explain the detrimental effects of sleep loss with a focus on attention and cognitive control.
 

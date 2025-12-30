@@ -2,7 +2,7 @@
 title: "The effect of neuromuscular blockade on EEG-based measures of awareness"
 collection: "publications"
 category: "preprint"
-permalink: "https://www.medrxiv.org/content/10.1101/2025.07.11.25331259v1"
+#permalink: "https://www.medrxiv.org/content/10.1101/2025.07.11.25331259v1"
 abstract: ""
 excerpt: "TBW"
 date: "2025-01-01"
