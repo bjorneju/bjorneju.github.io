@@ -12,4 +12,3 @@ paperurl: "https://www.semanticscholar.org/paper/937d0cf7751d87a2be64fcb901ff334
 bibtexurl: " "
 citation: "Aamodt et al. (2023), \"EEG Lempel-Ziv complexity varies with sleep stage, but does not seem to track dream experience\" in Frontiers in Human Neuroscience"
 ---
-
