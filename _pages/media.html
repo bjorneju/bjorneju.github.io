@@ -5,6 +5,18 @@ permalink: /media/
 author_profile: true
 ---
 
+{% assign total_media = site.media | size %}
+
+<p>
+I have appeared in media {{ total_media }} times.
+{% assign cats = site.media | map: "category" | uniq %}
+{% for cat in cats %}
+  {% assign count = site.media | where: "category", cat | size %}
+  {% if forloop.first %} Of these, {% else %}, {% endif %}
+  {{ count }} in {{ cat }}
+{% endfor %}. I am very happy to contribute again. Just get in touch if you need me :) 
+</p>
+
 {% if site.media_category %}
   {% for category in site.media_category %}
 
