@@ -1,0 +1,7 @@
+.featured-rotator__item {
+  display: none;
+}
+
+.featured-rotator__item.is-active {
+  display: block;
+}
