@@ -15,8 +15,8 @@ audience: >
   Academic labs, R&D teams, and companies exploring technology or research-based innovation.
 
 includes:
-  - **Tier 1:** Short consultation (1–2 sessions) for advice on experimental design or analysis.
-  - **Tier 2:** Full project support, including scoping, methodology review, and ongoing feedback.
+  - Tier 1: Short consultation (1–2 sessions) for advice on experimental design or analysis.
+  - Tier 2: Full project support, including scoping, methodology review, and ongoing feedback.
   - Guidance on statistical and computational methods (EEG, modeling, or general scientific data)
   - Written and verbal consultation sessions
 
