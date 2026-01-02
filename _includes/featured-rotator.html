@@ -12,15 +12,11 @@
           <!-- Collection label (user-facing, as in nav) -->
           <p class="featured-rotator__collection">
             {% assign collection_name = site.collections[entry.collection].label | default: entry.collection %}
-            {{ collection_name }}
-          </p>
-
-          <!-- Title link -->
-          <h3 class="featured-rotator__title">
+            {{ collection_name }}: 
             <a href="{{ item.url | relative_url }}">
               {{ item.title }}
             </a>
-          </h3>
+          </p>
 
         </article>
       {% endif %}
