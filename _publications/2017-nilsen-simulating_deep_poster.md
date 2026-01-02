@@ -9,5 +9,5 @@ venue: ""
 slidesurl: ""
 paperurl: "https://api.nva.unit.no/publication/0198cc41c417-4b9ea837-0187-41d8-9213-29fdae631457"
 bibtexurl: ""
-citation: 'Nilsen et al. (2017), "Simulating deep sleep and awake states in a mammalian thalamocortical model"'
+citation: "Nilsen et al. (2017), \"Simulating deep sleep and awake states in a mammalian thalamocortical model\""
 ---
