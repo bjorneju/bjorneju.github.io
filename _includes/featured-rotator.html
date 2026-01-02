@@ -5,32 +5,24 @@
     {% for entry in site.data.featured %}
       {% assign items = site[entry.collection] | where: "slug", entry.slug %}
       {% assign item = items.first %}
-      {% if item %}
 
+      {% if item %}
         <article class="featured-rotator__item{% if forloop.first %} is-active{% endif %}">
-          <h3>
+
+          <!-- Collection label (user-facing, as in nav) -->
+          <p class="featured-rotator__collection">
+            {% assign collection_name = site.collections[entry.collection].label | default: entry.collection %}
+            {{ collection_name }}
+          </p>
+
+          <!-- Title link -->
+          <h3 class="featured-rotator__title">
             <a href="{{ item.url | relative_url }}">
               {{ item.title }}
             </a>
           </h3>
 
-          {% if item.date %}
-            <p class="featured-rotator__meta">
-              {{ item.date | date: "%Y" }}
-            </p>
-          {% endif %}
-
-          {% if item.excerpt %}
-            <p class="featured-rotator__excerpt">
-              {{ item.excerpt | strip_html | truncate: 220 }}
-            </p>
-          {% endif %}
-
-          <p class="featured-rotator__link">
-            <a href="{{ item.url | relative_url }}">Learn more →</a>
-          </p>
         </article>
-
       {% endif %}
     {% endfor %}
   </div>

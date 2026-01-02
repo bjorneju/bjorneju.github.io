@@ -17,14 +17,14 @@ main:
   - title: "Projects"
     url: /projects/    
 
-  - title: "Teaching"
-    url: /teaching/    
-
   - title: "Media Appearances"
     url: /media/    
         
   - title: "Services"
     url: /services/
+
+  - title: "Teaching"
+    url: /teaching/    
     
   - title: "CV"
     url: /cv/
