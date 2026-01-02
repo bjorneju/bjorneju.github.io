@@ -10,7 +10,18 @@ author_profile: true
 {% endif %}
 
 {% include base_path %}
+<h3>Debug: Publication categories & posts</h3>
+<ul>
+{% for post in site.publications %}
+  <li>{{ post.title }} — category: '{{ post.category }}' — collection: '{{ post.collection }}'</li>
+{% endfor %}
+</ul>
 
+<ul>
+{% for category in site.publication_category %}
+  <li>Category key: '{{ category[0] }}', title: '{{ category[1].title }}'</li>
+{% endfor %}
+</ul>
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
   {% for category in site.publication_category %}
