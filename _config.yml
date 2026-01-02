@@ -104,6 +104,35 @@ publication_category:
   workshops:
     title: 'Workshops etc'    
 
+# other categories
+services_category:
+  consulting:
+    title: "Consulting"
+  workshops:
+    title: "Workshops"
+  teaching:
+    title: "Teaching"
+  tutoring:
+    title: "Private tutoring"
+
+media_category:
+  lectures:
+    title: "Lectures"
+  radio:
+    title: "Radio"
+  television:
+    title: "TV"
+  newspaper:
+    title: "News Articles"
+  commentaries:
+    title: "Commentaries"
+  interviews:
+    title: "Interviews"
+  podcasts:
+    title: "Podcasts"
+  videos:
+    title: "Video Features"
+
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : false # true, false (default)
