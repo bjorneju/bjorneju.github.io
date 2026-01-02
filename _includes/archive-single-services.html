@@ -5,10 +5,8 @@
            itemscope itemtype="http://schema.org/Service">
 
     <!-- Service title -->
-    <h2>
-        <a href="{{ post.url | relative_url }}">
-            {{ post.title }}
-        </a>
+    <h2 class="archive__item-title" itemprop="name">
+      {{ post.title }}
     </h2>
 
     <!-- Service subtitle / tagline -->
