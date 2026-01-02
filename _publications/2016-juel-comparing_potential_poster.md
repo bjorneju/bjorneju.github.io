@@ -3,7 +3,7 @@ title: "Comparing Potential Objective Measures of Human Consciousness: the Pertu
 collection: "publications"
 category: "posters"
 abstract: ""
-excerpt: ""
+excerpt: "excerpt"
 date: "2016-01-01"
 venue: ""
 slidesurl: ""

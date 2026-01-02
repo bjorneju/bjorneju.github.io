@@ -2,7 +2,7 @@
 title: "Can We Monitor Consciousness in Real Time with EEG?"
 collection: "publications"
 category: "posters"
-abstract: ""
+abstract: "abstract"
 excerpt: ""
 date: "2015-01-01"
 venue: ""

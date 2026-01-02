@@ -1,8 +1,8 @@
 ---
 title: "The IIT Wiki"
-collection: projects
-status: past
-date: 2022-01-01
+collection: "projects"
+status: "past"
+date: "2022-01-01"
 role: "Contributor / Educator"
 collaborators: "Matteo Grasso, Jeremiah Hendren"
 external_url: "https://www.iit.wiki/"
