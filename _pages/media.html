@@ -1,26 +1,28 @@
----
-layout: archive
-title: "Media appearances"
-permalink: /media/
-author_profile: true
----
-
 {% if site.media_category %}
   {% for category in site.media_category %}
-    {% assign title_shown = false %}
-    <details>
-      <summary>{{ category[1].title }}</summary>
-      {% for post in site.media reversed %}
-        {% if post.category != category[0] %}
-          {% continue %}
-        {% endif %}
-        {% unless title_shown %}
-          <hr />
-          {% assign title_shown = true %}
-        {% endunless %}
-        {% include archive-single-media.html %}
-      {% endfor %}
-    </details>
+
+    {% assign posts_in_category = site.media | where: "category", category[0] %}
+    {% if posts_in_category.size > 0 %}
+
+      {% assign title_shown = false %}
+      <details>
+        <summary>{{ category[1].title }}</summary>
+
+        {% for post in site.media reversed %}
+          {% if post.category != category[0] %}
+            {% continue %}
+          {% endif %}
+
+          {% unless title_shown %}
+            <hr />
+            {% assign title_shown = true %}
+          {% endunless %}
+
+          {% include archive-single-media.html %}
+        {% endfor %}
+      </details>
+
+    {% endif %}
   {% endfor %}
 {% else %}
   {% for post in site.media reversed %}

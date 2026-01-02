@@ -7,20 +7,29 @@ author_profile: true
 
 {% if site.services_category %}
   {% for category in site.services_category %}
-    {% assign title_shown = false %}
-    <details>
-      <summary>{{ category[1].title }}</summary>
-      {% for post in site.services reversed %}
-        {% if post.category != category[0] %}
-          {% continue %}
-        {% endif %}
-        {% unless title_shown %}
-          <hr />
-          {% assign title_shown = true %}
-        {% endunless %}
-        {% include archive-single-services.html %}
-      {% endfor %}
-    </details>
+
+    {% assign posts_in_category = site.services | where: "category", category[0] %}
+    {% if posts_in_category.size > 0 %}
+
+      {% assign title_shown = false %}
+      <details>
+        <summary>{{ category[1].title }}</summary>
+
+        {% for post in site.services reversed %}
+          {% if post.category != category[0] %}
+            {% continue %}
+          {% endif %}
+
+          {% unless title_shown %}
+            <hr />
+            {% assign title_shown = true %}
+          {% endunless %}
+
+          {% include archive-single-services.html %}
+        {% endfor %}
+      </details>
+
+    {% endif %}
   {% endfor %}
 {% else %}
   {% for post in site.services reversed %}
