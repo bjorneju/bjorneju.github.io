@@ -4,9 +4,20 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
+{% assign total_pubs = site.publications | size %}
+
+<p>I have published {{ total_pubs }} papers.</p>
+
+<ul>
+{% assign cats = site.publications | map: "category" | uniq %}
+{% for cat in cats %}
+  {% assign count = site.publications | where: "category", cat | size %}
+  <li>{{ count }} in {{ cat | default: "Uncategorized" }}</li>
+{% endfor %}
+</ul>
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <div class="wordwrap">If you prefer, you can find my articles (with some statistics) on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
 {% include base_path %}

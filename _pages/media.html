@@ -8,13 +8,8 @@ author_profile: true
 {% assign total_media = site.media | size %}
 
 <p>
-I have appeared in media {{ total_media }} times.
-{% assign cats = site.media | map: "category" | uniq %}
-{% for cat in cats %}
-  {% assign count = site.media | where: "category", cat | size %}
-  {% if forloop.first %} Of these, {% else %}, {% endif %}
-  {{ count }} in {{ cat }}
-{% endfor %}. I am very happy to contribute again. Just get in touch if you need me :) 
+I have been lucky enough to appear in the media several times over the years, 
+and I am very happy to contribute again. Just get in touch if you need me :) 
 </p>
 
 {% if site.media_category %}

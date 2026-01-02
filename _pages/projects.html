@@ -9,6 +9,12 @@ author_profile: true
 
 {% assign statuses = "ongoing,past,potential" | split: "," %}
 
+<p>
+My collaborators and I have had many productive, fun, and interesting projects over the years. 
+We still have some of them up and running, and are always looking for collaborators. 
+Have a look at what we are doing, what we have done, and what we are eager to do, and get in touch if any of it tickles your fancy!
+</p>
+
 {% for status in statuses %}
   {% assign matching = site.projects | where: "status", status %}
   {% if matching.size > 0 %}
