@@ -17,7 +17,7 @@ It was found that 24 hr of sleep deprivation resulted in declined sustained atte
 
 CONCLUSIONS
 These results support the notion that sleep deprivation is more detrimental to cognitive functions that are relatively more dependent on mental effort and/or cognitive capacity, as opposed to more automatic control processes."
-excerpt: "TBW"
+excerpt: "In this article, which was the result of our student's (A. Kusztor, PhD) Master's project, we show how the brain's capacity for sustained attention and top-down control was affected by sleep deprivation."
 date: "2019-01-01"
 venue: "Sleep"
 slidesurl: " "
