@@ -18,12 +18,12 @@ author_profile: true
           <hr />
           {% assign title_shown = true %}
         {% endunless %}
-        {% include archive-single.html %}
+        {% include archive-single-services.html %}
       {% endfor %}
     </details>
   {% endfor %}
 {% else %}
   {% for post in site.services reversed %}
-    {% include archive-single.html %}
+    {% include archive-single-services.html %}
   {% endfor %}
 {% endif %}
