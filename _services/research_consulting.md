@@ -22,3 +22,17 @@ includes:
 
 linkurl: "https://example.com/contact"
 ---
+
+
+### How it works
+We start with an initial scoping call, followed by a focused review of
+your research goals, data, or experimental design.
+
+### Typical engagements
+- One-off expert review
+- Ongoing advisory role
+- Workshop or group session
+
+### Why work with me
+My background combines empirical neuroscience with formal theories of
+consciousness, allowing me to bridge data, interpretation, and theory.
