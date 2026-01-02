@@ -1,0 +1,23 @@
+---
+layout: archive
+title: "Projects"
+permalink: /projects/
+author_profile: true
+---
+
+{% include base_path %}
+
+{% assign statuses = "ongoing,past,potential" | split: "," %}
+
+{% for status in statuses %}
+  {% assign matching = site.projects | where: "status", status %}
+  {% if matching.size > 0 %}
+    <details>
+      <summary>{{ status | capitalize }} projects</summary>
+
+      {% for post in matching reversed %}
+        {% include archive-single-project.html %}
+      {% endfor %}
+    </details>
+  {% endif %}
+{% endfor %}
