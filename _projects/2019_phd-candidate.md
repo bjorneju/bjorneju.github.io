@@ -1,31 +1,12 @@
-<div class="archive__item">
-  <article>
+---
+title: "PhD Candidate at the University of Oslo"
+collection: projects
+status: past
+date: 2018-01-01
+role: "candidate"
+collaborators: "Johan F. Storm"
+external_url: "https://www.iit.wiki/"
+excerpt: "Becoming Phd"
+---
 
-    <h3 class="archive__item-title">
-      {% if post.external_url %}
-        <a href="{{ post.external_url }}" target="_blank" rel="noopener">{{ post.title }}</a>
-      {% else %}
-        {{ post.title }}
-      {% endif %}
-    </h3>
-
-    {% if post.role or post.collaborators %}
-      <p class="page__meta">
-        {% if post.role %}{{ post.role }}{% endif %}
-        {% if post.collaborators %} · {{ post.collaborators }}{% endif %}
-      </p>
-    {% endif %}
-
-    {% if post.excerpt %}
-      <p>{{ post.excerpt | markdownify }}</p>
-    {% endif %}
-
-    {% if post.content %}
-      <details>
-        <summary>More details</summary>
-        {{ post.content }}
-      </details>
-    {% endif %}
-
-  </article>
-</div>
+Took my phd
