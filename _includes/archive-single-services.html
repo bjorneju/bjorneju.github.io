@@ -1,0 +1,52 @@
+{% include base_path %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item archive__item--service"
+           itemscope itemtype="http://schema.org/Service">
+
+    <!-- Service title -->
+    <h2 class="archive__item-title" itemprop="name">
+      {{ post.title }}
+    </h2>
+
+    <!-- Service subtitle / tagline -->
+    {% if post.tagline %}
+      <p class="archive__item-tagline">
+        {{ post.tagline }}
+      </p>
+    {% endif %}
+
+    <!-- Short description (primary pitch) -->
+    {% if post.excerpt %}
+      <p class="archive__item-excerpt" itemprop="description">
+        {{ post.excerpt | markdownify }}
+      </p>
+    {% endif %}
+
+    <!-- What this includes / deliverables -->
+    {% if post.includes %}
+      <ul class="archive__item-includes">
+        {% for item in post.includes %}
+          <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <!-- Who it’s for -->
+    {% if post.audience %}
+      <p class="archive__item-audience">
+        <strong>Best suited for:</strong> {{ post.audience }}
+      </p>
+    {% endif %}
+
+    <!-- Call to action -->
+    {% if post.linkurl %}
+      <p class="archive__item-cta">
+        <a href="{{ post.linkurl }}" class="btn btn--primary">
+          Get in touch
+        </a>
+      </p>
+    {% endif %}
+
+  </article>
+</div>

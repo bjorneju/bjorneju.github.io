@@ -1,7 +1,7 @@
 ---
 title: "News paper article on near death experiences"
 collection: "media"
-category: "newsnewspaper"
+category: "newspaper"
 date: "2022-03-16"
 abstract: ""
 excerpt: "I was asked to comment on new research claiming to have found signatures of near death experiences in EEG signals."
