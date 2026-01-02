@@ -10,35 +10,38 @@ author_profile: true
   I take on jobs big and small, and rates depend on what you need, what you offer, and the time I have. 
   Please reach out if you need something, and I am sure we can find a solution.
 </p>
+{% assign sorted_services = site.services | sort: "title" %}
 
-{% if site.services_category %}
-  {% for category in site.services_category %}
+<div class="services-list">
+  {% assign service_order = "Scientific Methods Advisory|IIT & Complex Systems Workshop|Corporate & Startup Scientific Strategy Sessions|Lectures, Panels, and Workshops on Science and Consciousness|Private Tutoring in Natural Sciences, Mathematics, and Physics" | split: "|" %}
 
-    {% assign posts_in_category = site.services | where: "category", category[0] %}
-    {% if posts_in_category.size > 0 %}
-
-      {% assign title_shown = false %}
-      <details>
-        <summary>{{ category[1].title }}</summary>
-
-        {% for post in site.services reversed %}
-          {% if post.category != category[0] %}
-            {% continue %}
+  {% for slug in service_order %}
+    {% assign post = site.services | where: "title", slug | first %}
+    {% if post %}
+      <details class="service-item">
+        <summary>
+          <strong>{{ post.title }}</strong> — 
+          <em>Best suited for {{ post.audience }}</em>
+        </summary>
+        <div class="service-content">
+          <p><strong>{{ post.tagline }}</strong></p>
+          {% if post.excerpt %}
+            <p>{{ post.excerpt }}</p>
           {% endif %}
-
-          {% unless title_shown %}
-            <hr />
-            {% assign title_shown = true %}
-          {% endunless %}
-
-          {% include archive-single-services.html %}
-        {% endfor %}
+          {% if post.includes %}
+            <ul>
+              {% for item in post.includes %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+          <p>
+            <a class="btn-contact" href="mailto:bjorneju@gmail.com?subject={{ post.title | url_encode }}">
+              Contact me
+            </a>
+          </p>
+        </div>
       </details>
-
     {% endif %}
   {% endfor %}
-{% else %}
-  {% for post in site.services reversed %}
-    {% include archive-single-services.html %}
-  {% endfor %}
-{% endif %}
+</div>

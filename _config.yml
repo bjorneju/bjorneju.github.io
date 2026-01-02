@@ -107,13 +107,11 @@ publication_category:
 # other categories
 services_category:
   consulting:
-    title: "Consulting"
+    title: "Consulting and Advisory services"
   workshops:
-    title: "Workshops"
+    title: "Workshops and Public speaking"
   teaching:
-    title: "Teaching"
-  tutoring:
-    title: "Private tutoring"
+    title: "Teaching and Private tutoring"
 
 media_category:
   lectures:

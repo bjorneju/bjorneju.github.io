@@ -1,39 +1,24 @@
 ---
-title: "Consciousness Consulting for Research Groups"
+title: "Scientific Methods Advisory"
 collection: "services"
 category: "consulting"
-date: "2025-01-01"
-slug: research-consultant
+date: "2026-01-01"
+slug: scientific-methods-advisory
 
-tagline: "Expert guidance on experimental design, analysis, and theory"
+tagline: "Guidance on research design, data analysis, and project strategy"
 
 excerpt: >
-  Tailored consulting for academic and industrial teams working on
-  neuroscience, consciousness research, and complex brain data.
+  Tailored advice for researchers, startups, and companies needing
+  structured guidance on experiments, data, and scientific strategy.
 
 audience: >
-  Academic labs, R&D teams, and research-driven companies working with
-  EEG, neuroimaging, or theoretical models of consciousness.
+  Academic labs, R&D teams, and companies exploring technology or research-based innovation.
 
 includes:
-  - Experimental design and methodology review
-  - Data analysis strategy (EEG, complexity measures, modeling)
-  - Theoretical guidance grounded in contemporary consciousness science
-  - Written feedback and live consultation sessions
+  - **Tier 1:** Short consultation (1–2 sessions) for advice on experimental design or analysis.
+  - **Tier 2:** Full project support, including scoping, methodology review, and ongoing feedback.
+  - Guidance on statistical and computational methods (EEG, modeling, or general scientific data)
+  - Written and verbal consultation sessions
 
 linkurl: "https://example.com/contact"
 ---
-
-
-### How it works
-We start with an initial scoping call, followed by a focused review of
-your research goals, data, or experimental design.
-
-### Typical engagements
-- One-off expert review
-- Ongoing advisory role
-- Workshop or group session
-
-### Why work with me
-My background combines empirical neuroscience with formal theories of
-consciousness, allowing me to bridge data, interpretation, and theory.
