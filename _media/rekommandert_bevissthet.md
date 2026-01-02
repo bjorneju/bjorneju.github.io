@@ -4,6 +4,7 @@ collection: "media"
 category: "podcasts"
 date: "2025-10-27"
 abstract: ""
+slug: podcast-rekommandert
 excerpt: "I was interviewed in a long form podcast on consciousness."
 videourl: "https://shows.acast.com/rekommandert/episodes/bevissthet"
 ---

@@ -3,6 +3,7 @@ title: "Consciousness Consulting for Research Groups"
 collection: "services"
 category: "consulting"
 date: "2025-01-01"
+slug: research-consultant
 
 tagline: "Expert guidance on experimental design, analysis, and theory"
 

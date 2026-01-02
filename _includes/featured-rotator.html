@@ -1,0 +1,37 @@
+<section class="featured-rotator" aria-live="polite">
+  <h2>Featured</h2>
+
+  <div class="featured-rotator__items">
+    {% for entry in site.data.featured %}
+      {% assign items = site[entry.collection] | where: "slug", entry.slug %}
+      {% assign item = items.first %}
+      {% if item %}
+
+        <article class="featured-rotator__item{% if forloop.first %} is-active{% endif %}">
+          <h3>
+            <a href="{{ item.url | relative_url }}">
+              {{ item.title }}
+            </a>
+          </h3>
+
+          {% if item.date %}
+            <p class="featured-rotator__meta">
+              {{ item.date | date: "%Y" }}
+            </p>
+          {% endif %}
+
+          {% if item.excerpt %}
+            <p class="featured-rotator__excerpt">
+              {{ item.excerpt | strip_html | truncate: 220 }}
+            </p>
+          {% endif %}
+
+          <p class="featured-rotator__link">
+            <a href="{{ item.url | relative_url }}">Learn more →</a>
+          </p>
+        </article>
+
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

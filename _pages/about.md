@@ -22,6 +22,9 @@ Bjørn
 
 <div style="margin-top:15rem;"></div>
 
+{% include featured-rotator.html %}
+<script src="{{ '/assets/js/featured-rotator.js' | relative_url }}"></script>
+
 <div class="homepage-grid">
 
   <!-- Card 1: IIT Wiki -->

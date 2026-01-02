@@ -2,6 +2,7 @@
 title: "Are we really unconscious in “unconscious” states? Common assumptions revisited"
 collection: "publications"
 category: "manuscripts"
+slug: 2022-Nilsen-Are_we
 #permalink: ""
 abstract: "In the field of consciousness science, there is a tradition to categorize certain states such as slow-wave non-REM sleep and deep general anesthesia as “unconscious”. While this categorization seems reasonable at first glance, careful investigations have revealed that it is not so simple. Given that (1) behavioral signs of (un-)consciousness can be unreliable, (2) subjective reports of (un-)consciousness can be unreliable, and, (3) states presumed to be unconscious are not always devoid of reported experience, there are reasons to reexamine our traditional assumptions about “states of unconsciousness”. While these issues are not novel, and may be partly semantic, they have implications both for scientific progress and clinical practice. We suggest that focusing on approaches that provide a more pragmatic and nuanced characterization of different experimental conditions may promote clarity in the field going forward, and help us build stronger foundations for future studies."
 excerpt: "In this commentary, we argue that the states commonly referred to as \"unconscious\", need to be treated with much more care than they are normally given. Most such states are riddled with conscious experience, and treating them as unconscious is likely to hinder progress in the science of consciousness."
