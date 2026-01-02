@@ -15,14 +15,18 @@ Here, you can find some information about my academic past, present, and future.
 Bjørn
 
 ---
-<p style="text-align:center; margin-top:5rem; font-size:1.1rem;">
-⬇ Below is some content to get you started ⬇
-</p>
 
-<div style="margin-top:8rem;"></div>
+<div style="margin-top:5rem;"></div>
 
 {% include featured-rotator.html %}
 <script src="{{ '/assets/js/featured-rotator.js' | relative_url }}"></script>
+
+<p style="text-align:center; margin-top:3rem; font-size:1.1rem;">
+⬇ And below is some morecontent to get you started ⬇
+</p>
+
+<div style="margin-top:5rem;"></div>
+
 
 <div class="homepage-grid">
 
