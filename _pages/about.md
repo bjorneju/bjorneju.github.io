@@ -18,11 +18,8 @@ Bjørn
 
 <div style="margin-top:5rem;"></div>
 
-{% include featured-rotator.html %}
-<script src="{{ '/assets/js/featured-rotator.js' | relative_url }}"></script>
-
 <p style="text-align:center; margin-top:3rem; font-size:1.1rem;">
-⬇ And below is some morecontent to get you started ⬇
+⬇ Below is some ontent from this page to get you started ⬇
 </p>
 
 <div style="margin-top:5rem;"></div>
