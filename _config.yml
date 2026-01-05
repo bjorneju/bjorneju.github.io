@@ -102,7 +102,9 @@ publication_category:
   posters:
     title: 'Posters'        
   workshops:
-    title: 'Workshops etc'    
+    title: 'Symposia, Workshops etc'
+  outreach:
+    title: 'Public outreach events'
 
 # other categories
 services_category:
