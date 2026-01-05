@@ -143,9 +143,11 @@ funding_category:
 
 teaching_category:
   courses:
-    title: "Courses and classes"
+    title: "Courses"
   materials:
     title: "Teaching Materials"
+  classes:
+    title: "Classes"
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
