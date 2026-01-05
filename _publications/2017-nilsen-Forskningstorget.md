@@ -1,5 +1,5 @@
 ---
-title: "Forsknigstorget: Hvordan kan hjernen skape bevissthet?
+title: "Forsknigstorget: Hvordan kan hjernen skape bevissthet?"
 collection: "publications"
 category: "outreach"
 abstract: ""
