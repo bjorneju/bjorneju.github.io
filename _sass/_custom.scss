@@ -18,3 +18,15 @@
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+/* Allow line breaks in nav items */
+.masthead__menu-item a {
+  white-space: normal;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Optional: narrower nav items */
+.masthead__menu-item {
+  max-width: 6.5em;
+}

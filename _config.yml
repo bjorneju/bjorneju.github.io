@@ -87,24 +87,24 @@ publication_category:
     title: 'Books'
   manuscripts:
     title: 'Journal Articles'   
-  chapters:
-    title: 'Book Chapters' 
   conferences:
     title: 'Conference Papers'
+  workshops:
+    title: 'Symposia, Workshops etc'
+  talks:
+    title: 'Talks'     
+  outreach:
+    title: 'Public outreach events'
+  chapters:
+    title: 'Book Chapters' 
+  posters:
+    title: 'Posters'        
   preprint:
     title: 'Preprints'     
   thesis:
     title: 'Theses'     
   inprep:
     title: 'In preparation'        
-  talks:
-    title: 'Talks'     
-  posters:
-    title: 'Posters'        
-  workshops:
-    title: 'Symposia, Workshops etc'
-  outreach:
-    title: 'Public outreach events'
 
 # other categories
 services_category:
@@ -132,6 +132,14 @@ media_category:
     title: "Podcasts"
   videos:
     title: "Video Features"
+
+funding_category:
+  grants:
+    title: "Grants"
+  prizes:
+    title: "Prizes & Awards"
+  scholarships:
+    title: "Scholarships"
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
@@ -284,6 +292,9 @@ collections:
   services:
     output: true
     permalink: /services/:path/
+  funding:
+    output: true
+    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site

@@ -1,0 +1,18 @@
+<div class="archive__item">
+  <h2>{{ post.title }}</h2>
+  {% if post.organization %}
+    <p><i>{{ post.organization }}</i>, {{ post.date | date: "%Y" }}</p>
+  {% endif %}
+  {% if post.amount %}
+    <p>Amount: {{ post.amount }}</p>
+  {% endif %}
+  {% if post.abstract %}
+    <details>
+      <summary>Description</summary>
+      <p>{{ post.abstract | markdownify }}</p>
+    </details>
+  {% endif %}
+  {% if post.linkurl %}
+    <p><a href="{{ post.linkurl }}" target="_blank" rel="noopener">More info</a></p>
+  {% endif %}
+</div>

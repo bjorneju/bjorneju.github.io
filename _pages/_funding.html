@@ -1,0 +1,29 @@
+---
+layout: archive
+title: "Funding & Rewards"
+permalink: /funding/
+author_profile: true
+---
+
+{% if site.funding_category %}
+  {% for category in site.funding_category %}
+    {% assign title_shown = false %}
+    <details>
+      <summary>{{ category[1].title }}</summary>
+      {% for post in site.funding reversed %}
+        {% if post.category != category[0] %}
+          {% continue %}
+        {% endif %}
+        {% unless title_shown %}
+          <hr />
+          {% assign title_shown = true %}
+        {% endunless %}
+        {% include archive-single-funding.html %}
+      {% endfor %}
+    </details>
+  {% endfor %}
+{% else %}
+  {% for post in site.funding reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}
