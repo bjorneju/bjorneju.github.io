@@ -7,6 +7,31 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+{% if site.teaching_category %}
+  {% for category in site.teaching_category %}
+    {% assign has_items = false %}
+
+    {% for post in site.teaching %}
+      {% if post.category == category[0] %}
+        {% assign has_items = true %}
+      {% endif %}
+    {% endfor %}
+
+    {% if has_items %}
+      <details>
+        <summary>{{ category[1].title }}</summary>
+
+        {% for post in site.teaching reversed %}
+          {% if post.category == category[0] %}
+            {% include archive-single-teaching.html %}
+          {% endif %}
+        {% endfor %}
+
+      </details>
+    {% endif %}
+  {% endfor %}
+{% else %}
+  {% for post in site.teaching reversed %}
+    {% include archive-single-teaching.html %}
+  {% endfor %}
+{% endif %}

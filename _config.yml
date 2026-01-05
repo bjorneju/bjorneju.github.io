@@ -141,6 +141,12 @@ funding_category:
   scholarships:
     title: "Scholarships"
 
+teaching_category:
+  courses:
+    title: "Courses and classes"
+  materials:
+    title: "Teaching Materials"
+
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : false # true, false (default)
