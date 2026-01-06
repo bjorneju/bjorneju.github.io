@@ -30,3 +30,36 @@
 .masthead__menu-item {
   max-width: 6.5em;
 }
+
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@100;200;300;400&family=Soria:wght@300;500&display=swap');
+
+/* Base text */
+body {
+  font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.4;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Soria', Georgia, serif;
+  font-weight: 500;
+}
+
+.site-title,
+.masthead,
+.nav__list,
+.author__name {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+}
+
+html[data-theme="dark"] body {
+  font-weight: 200;
+}
+
+/* Reduce overall text size by ~20% */
+html {
+  font-size: 80%;
+}
