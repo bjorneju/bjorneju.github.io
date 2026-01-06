@@ -14,7 +14,7 @@
 
     <!-- Project metadata: started year, leader, collaborators, role -->
     <p>
-      {% if post.status = "potential" %}
+      {% if post.status == "potential" %}
         Planned for the future
       {% else %}
         Started in {{ post.date | date: "%Y" }}
@@ -24,7 +24,7 @@
     </p>
 
     <!-- Project excerpt -->
-    {% if post.excerpt = "TBD" %}
+    {% if post.excerpt == "TBD" %}
       <p> Excerpt to come </p>
     {% elsif post.excerpt %}
       <p>{{ post.excerpt | markdownify }}</p>
