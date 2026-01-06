@@ -2,7 +2,7 @@
 title: "Meaning and information"
 collection: "projects"
 status: "potential"
-date: "2099-01-01"
+date: "2024-01-01"
 role: "collaborator and (co)-leader"
 leader: "Bjørn E Juel"
 collaborators: "you?"

@@ -14,7 +14,11 @@
 
     <!-- Project metadata: started year, leader, collaborators, role -->
     <p class="page__meta">
-      {% if post.date %}Started in {{ post.date | date: "%Y" }}{% endif %}
+      {% if post.status = "potential" %}
+        Planned for the future
+      {% else %}
+        Started in {{ post.date | date: "%Y" }}
+      {% endif %}
       {% if post.leader %}, lead by {{ post.leader }}{% endif %}
       {% if post.collaborators %}, in collaboration with {{ post.collaborators }}{% endif %}
     </p>
