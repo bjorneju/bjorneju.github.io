@@ -13,7 +13,7 @@
     </h2>
 
     <!-- Project metadata: started year, leader, collaborators, role -->
-    <p class="page__meta">
+    <p>
       {% if post.status = "potential" %}
         Planned for the future
       {% else %}
@@ -24,7 +24,9 @@
     </p>
 
     <!-- Project excerpt -->
-    {% if post.excerpt %}
+    {% if post.excerpt = "TBD" %}
+      <p> Excerpt to come </p>
+    {% elsif post.excerpt %}
       <p>{{ post.excerpt | markdownify }}</p>
     {% endif %}
 

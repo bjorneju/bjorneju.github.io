@@ -7,7 +7,7 @@ role: "Contributor"
 leader: "Johan F. Storm"
 collaborators: "Andre Nilsen and many more"
 external_url: "https://bjorneju.github.io/"
-excerpt: "TBW"
+excerpt: "TBD"
 ---
 
 
