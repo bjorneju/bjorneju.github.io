@@ -1,29 +1,36 @@
-<div class="archive__item">
-  <article>
+{% include base_path %}
 
-    <h3 class="archive__item-title">
+<div class="archive__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+
+    <!-- Project title -->
+    <h2 class="archive__item-title" itemprop="headline">
       {% if post.external_url %}
         <a href="{{ post.external_url }}" target="_blank" rel="noopener">{{ post.title }}</a>
       {% else %}
         {{ post.title }}
       {% endif %}
-    </h3>
+    </h2>
 
-    {% if post.role or post.collaborators %}
-      <p class="page__meta">
-        {% if post.role %}{{ post.role }}{% endif %}
-        {% if post.collaborators %} · {{ post.collaborators }}{% endif %}
-      </p>
-    {% endif %}
+    <!-- Project metadata: started year, leader, collaborators, role -->
+    <p class="page__meta">
+      {% if post.date %}Started in {{ post.date | date: "%Y" }}{% endif %}
+      {% if post.leader %}, lead by {{ post.leader }}{% endif %}
+      {% if post.collaborators %}, in collaboration with {{ post.collaborators }}{% endif %}
+    </p>
 
+    <!-- Project excerpt -->
     {% if post.excerpt %}
       <p>{{ post.excerpt | markdownify }}</p>
     {% endif %}
 
+    <!-- Project content / more details -->
     {% if post.content %}
       <details>
         <summary>More details</summary>
-        {{ post.content }}
+        <div class="archive__item-content">
+          {{ post.content | markdownify }}
+        </div>
       </details>
     {% endif %}
 

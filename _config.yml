@@ -149,6 +149,15 @@ teaching_category:
   classes:
     title: "Classes"
 
+# Project Status Categories
+projects_category:
+  present:
+    title: "Present Projects"
+  past:
+    title: "Past Projects"
+  potential:
+    title: "Potential Projects"
+
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : false # true, false (default)
