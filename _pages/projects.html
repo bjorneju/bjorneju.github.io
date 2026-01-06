@@ -19,8 +19,9 @@ Have a look at what we are doing, what we have done, and what we are eager to do
   {% assign matching = site.projects | where: "status", status %}
   {% if matching.size > 0 %}
     <details>
-      <summary>{{ status | capitalize }} projects</summary>
-
+            <summary>
+        <h2 class="project-status">{{ status }} Projects</h2>
+      </summary>
       {% for post in matching reversed %}
         {% include archive-single-project.html %}
       {% endfor %}

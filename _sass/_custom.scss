@@ -36,14 +36,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@100;200;300;400&family=Soria:wght@300;500&display=swap');
 
 /* Base text */
-body {
-  font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+body, p, li, span, a, div {
+  font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, sans-serif !important;
   line-height: 1.4;
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Soria', Georgia, serif;
+  font-family: 'Soria', Georgia, serif !important;
   font-weight: 500;
 }
 
@@ -61,5 +61,5 @@ html[data-theme="dark"] body {
 
 /* Reduce overall text size by ~20% */
 html {
-  font-size: 80%;
+  font-size: 90%;
 }
