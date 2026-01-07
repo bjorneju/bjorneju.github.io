@@ -58,52 +58,57 @@ Skills
   * graph theory
   * complexity quantification
 
+# Academic Contributions
 [Academic Contributions](https://bjorneju.github.io/publications/)
 ======
-{% for category in site.publication_category %}
-  {% assign posts_in_category = site.publications | where: "category", category[0] %}
-  {% if posts_in_category.size > 0 %}
-    <h3><i>{{ category[1].title }}</i></h3>
-    <ul>
-      {% for post in posts_in_category reversed %}
-        {% include archive-single-cv-pub.html %}
-      {% endfor %}
-    </ul>
-  {% endif %}
-{% endfor %}
+<div class="cv-section">
+  {% assign publication_docs = site.collections['publications'].docs %}
+  {% for category in site.publication_category %}
+    {% assign group = publication_docs | where: "category", category[0] %}
+    {% if group.size > 0 %}
+      <h3>{{ category[1].title }}</h3>
+      <ul>
+        {% for post in group reversed %}
+          {% include archive-single-cv-pub.html %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endfor %}
+<div>
 
+# Funding and Awards
 [Funding and awards](https://bjorneju.github.io/funding/)
 ======
+<div class="cv-section">
+  {% assign funding_docs = site.collections['funding'].docs %}
+  {% for category in site.funding_category %}
+    {% assign group = funding_docs | where: "category", category[0] %}
+    {% if group.size > 0 %}
+      <h3>{{ category[1].title }}</h3>
+      <ul>
+        {% for post in group reversed %}
+          {% include archive-single-cv-fund.html %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endfor %}
+<div>
 
-{% assign funding_docs = site.collections['funding'].docs %}
 
-{% for category in site.funding_category %}
-  {% assign posts_in_category = funding_docs | where: "category", category[0] %}
-  {% if posts_in_category.size > 0 %}
-    <h3><i>{{ category[1].title }}</i></h3>
-    <ul>
-      {% for post in posts_in_category reversed %}
-        {% include archive-single-cv-fund.html %}
-      {% endfor %}
-    </ul>
-  {% endif %}
-{% endfor %}
-
-
+# Teaching
 [Teaching](https://bjorneju.github.io/teaching/)
 ======
-{% assign teaching_docs = site.collections['teaching'].docs %}
-{% for category in site.teaching_category %}
-  {% assign posts_in_category = teaching_docs | where: "category", category[0] %}
-  {% if posts_in_category.size > 0 %}
-    <h3><i>{{ category[1].title }}</i></h3>
-    <ul>
-      {% for post in posts_in_category reversed %}
-        {% include archive-single-cv-teach.html %}
-      {% endfor %}
-    </ul>
-  {% endif %}
-{% endfor %}
-
-
-
+<div class="cv-section">
+  {% assign teaching_docs = site.collections['teaching'].docs %}
+  {% for category in site.teaching_category %}
+    {% assign group = teaching_docs | where: "category", category[0] %}
+    {% if group.size > 0 %}
+      <h3>{{ category[1].title }}</h3>
+      <ul>
+        {% for post in group reversed %}
+          {% include archive-single-cv-teach.html %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endfor %}
+<div>

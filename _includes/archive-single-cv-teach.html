@@ -1,12 +1,6 @@
-{% include base_path %}
-
-<div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <li>
-    <h3 class="archive__item-title" itemprop="headline">
-        {{ title }}
-    </h3>
-    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
-    </li>
- </article>
-</div>
+<li>
+  {% assign info = "" %}
+  {% if post.year %}{% assign info = info | append: post.year %}{% endif %}
+  {% if post.venue %}{% assign info = info | append: ", " | append: post.venue %}{% endif %}
+  {{ post.title }}{% if info != "" %} ({{ info }}){% endif %}
+</li>
