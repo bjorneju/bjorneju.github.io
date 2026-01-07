@@ -58,7 +58,7 @@ Skills
   * graph theory
   * complexity quantification
 
-[Academic Contributions](https://bjorneju.github.io/publications/)
+Academic Contributions
 ======
 <div class="cv-section">
   {% assign publication_docs = site.collections['publications'].docs %}
@@ -75,7 +75,7 @@ Skills
   {% endfor %}
 <div>
 
-[Funding and awards](https://bjorneju.github.io/funding/)
+Funding and awards
 ======
 <div class="cv-section">
   {% assign funding_docs = site.collections['funding'].docs %}
@@ -92,7 +92,7 @@ Skills
   {% endfor %}
 <div>
 
-[Teaching](https://bjorneju.github.io/teaching/)
+Teaching
 ======
 <div class="cv-section">
   {% assign teaching_docs = site.collections['teaching'].docs %}
