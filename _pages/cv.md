@@ -58,7 +58,6 @@ Skills
   * graph theory
   * complexity quantification
 
-# Academic Contributions
 [Academic Contributions](https://bjorneju.github.io/publications/)
 ======
 <div class="cv-section">
@@ -76,7 +75,6 @@ Skills
   {% endfor %}
 <div>
 
-# Funding and Awards
 [Funding and awards](https://bjorneju.github.io/funding/)
 ======
 <div class="cv-section">
@@ -94,8 +92,6 @@ Skills
   {% endfor %}
 <div>
 
-
-# Teaching
 [Teaching](https://bjorneju.github.io/teaching/)
 ======
 <div class="cv-section">
