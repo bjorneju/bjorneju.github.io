@@ -11,36 +11,33 @@ author_profile: true
   Please reach out if you need something, and I am sure we can find a solution.
 </p>
 
-<div class="services-list">
-  {% for post in site.services %}
-    <details class="service-item">
-      <summary>
-        <strong>{{ post.title }}</strong> — 
-        <p>Best suited for {{ post.audience }}</p>
-      </summary>
-      <div class="service-content">
-        {% if post.tagline %}
-          <p><strong>{{ post.tagline }}</strong></p>
-        {% endif %}
+{% include base_path %}
 
-        {% if post.excerpt %}
-          <p>{{ post.excerpt }}</p>
-        {% endif %}
+{% for post in site.services %}
+  <details class="service-item">
+    <summary>
+      <h2>{{ post.title }}</h2>   
+      <p><i>{{ post.tagline }}</i></p>   
+    </summary>
+    <div class="service-content">
+      {% if post.excerpt %}
+        <p>{{ post.excerpt }}</p>
+      {% endif %}
 
-        {% if post.includes %}
-          <ul>
-            {% for item in post.includes %}
-              <li>{{ item }}</li>
-            {% endfor %}
-          </ul>
-        {% endif %}
+      {% if post.includes %}
+        <ul>
+          {% for item in post.includes %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      <p>Best suited for {{ post.audience }}</p>
 
-        <p>
-          <a class="btn-contact" href="mailto:bjorneju@gmail.com?subject={{ post.title | url_encode }}">
-            Contact me
-          </a>
-        </p>
-      </div>
-    </details>
-  {% endfor %}
-</div>
+      <p>
+        <a class="btn-contact" href="mailto:bjorneju@gmail.com?subject={{ post.title | url_encode }}">
+          Contact me
+        </a>
+      </p>
+    </div>
+  </details>
+{% endfor %}

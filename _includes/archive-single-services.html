@@ -1,11 +1,7 @@
 {% include base_path %}
 
-<div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item archive__item--service"
-           itemscope itemtype="http://schema.org/Service">
-
-    <!-- Service title -->
-    <h2 class="archive__item-title" itemprop="name">
+<div class="archive__item">
+    <h2>
       {{ post.title }}
     </h2>
 
