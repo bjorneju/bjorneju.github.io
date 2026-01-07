@@ -92,8 +92,11 @@ redirect_from:
 <h2>Academic Contributions</h2>
 <div class="cv-section">
   {% assign publication_docs = site.collections['publications'].docs %}
-  {% for cat_key, cat_val in site.publication_category %}
+  {% for category in site.publication_category %}
+    {% assign cat_key = category[0] %}
+    {% assign cat_val = category[1] %}
     {% assign group = publication_docs | where: "category", cat_key | default: [] %}
+
     {% if group.size > 0 %}
       <h3>{{ cat_val.title }}</h3>
       <ul>
@@ -114,8 +117,11 @@ redirect_from:
 <h2>Funding and Awards (<a href="/funding/">all funding</a>)</h2>
 <div class="cv-section">
   {% assign funding_docs = site.collections['funding'].docs %}
-  {% for cat_key, cat_val in site.funding_category %}
+  {% for category in site.funding_category %}
+    {% assign cat_key = category[0] %}
+    {% assign cat_val = category[1] %}
     {% assign group = funding_docs | where: "category", cat_key | default: [] %}
+
     {% if group.size > 0 %}
       <h3>{{ cat_val.title }}</h3>
       <ul>
@@ -132,8 +138,11 @@ redirect_from:
 <h2>Teaching (<a href="/teaching/">all teaching</a>)</h2>
 <div class="cv-section">
   {% assign teaching_docs = site.collections['teaching'].docs %}
-  {% for cat_key, cat_val in site.teaching_category %}
+  {% for category in site.teaching_category %}
+    {% assign cat_key = category[0] %}
+    {% assign cat_val = category[1] %}
     {% assign group = teaching_docs | where: "category", cat_key | default: [] %}
+
     {% if group.size > 0 %}
       <h3>{{ cat_val.title }}</h3>
       <ul>
