@@ -60,7 +60,6 @@ Skills
 
 [Academic Contributions](https://bjorneju.github.io/publications/)
 ======
-
 {% for category in site.publication_category %}
   {% assign posts_in_category = site.publications | where: "category", category[0] %}
   {% if posts_in_category.size > 0 %}
@@ -76,8 +75,10 @@ Skills
 [Funding and awards](https://bjorneju.github.io/funding/)
 ======
 
+{% assign funding_docs = site.collections['funding'].docs %}
+
 {% for category in site.funding_category %}
-  {% assign posts_in_category = site.funding | where: "category", category[0] %}
+  {% assign posts_in_category = funding_docs | where: "category", category[0] %}
   {% if posts_in_category.size > 0 %}
     <h3><i>{{ category[1].title }}</i></h3>
     <ul>
@@ -88,11 +89,12 @@ Skills
   {% endif %}
 {% endfor %}
 
+
 [Teaching](https://bjorneju.github.io/teaching/)
 ======
-
+{% assign teaching_docs = site.collections['teaching'].docs %}
 {% for category in site.teaching_category %}
-  {% assign posts_in_category = site.teaching | where: "category", category[0] %}
+  {% assign posts_in_category = teaching_docs | where: "category", category[0] %}
   {% if posts_in_category.size > 0 %}
     <h3><i>{{ category[1].title }}</i></h3>
     <ul>
@@ -102,5 +104,6 @@ Skills
     </ul>
   {% endif %}
 {% endfor %}
+
 
 
