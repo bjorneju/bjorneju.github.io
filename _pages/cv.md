@@ -56,17 +56,23 @@ Skills
   * graph theory
   * complexity quantification
 
-Publications
+Academic Contributions
 ======
-  <ul>{% for post in site.publications reversed %}
+{% for category in site.publication_category %}
+  <i>{{ category[1].title }}</i>
+    <ul>{% for post in posts_in_category reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
+{% endfor %}
+
+Funding and awards
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
+{% for category in site.funding_category %}
+  <i>{{ category[1].title }}</i>
+    <ul>{% for post in posts_in_category reversed %}
+    {% include archive-single-cv.html %}
   {% endfor %}</ul>
+{% endfor %}
   
 Teaching
 ======
@@ -74,6 +80,3 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
