@@ -60,31 +60,50 @@ Skills
 
 [Academic Contributions](https://bjorneju.github.io/publications/)
 ======
+
 {% for category in site.publication_category %}
-  {% assign posts_in_category = site.collections['publications'].docs | where: "category", category.category %}
-  <i><h3>{{ category[1].title }}</h3></i>
-    <ul>{% for post in posts_in_category reversed %}
-    {% include archive-single-cv-pub.html %}
-  {% endfor %}</ul>
+  {% assign posts_in_category = site.publications_by_category[category[0]] %}
+
+  {% if posts_in_category %}
+    <h3><i>{{ category[1].title }}</i></h3>
+    <ul>
+      {% for post in posts_in_category reversed %}
+        {% include archive-single-cv-pub.html %}
+      {% endfor %}
+    </ul>
+  {% endif %}
 {% endfor %}
 
 [Funding and awards](https://bjorneju.github.io/funding/)
 ======
+
 {% for category in site.funding_category %}
-  {% assign posts_in_category = site.collections['funding'].docs | where: "category", category.category %}
-  <i><h3>{{ category[1].title }}</h3></i>
-    <ul>{% for post in posts_in_category reversed %}
-    {% include archive-single-cv-fund.html %}
-  {% endfor %}</ul>
+  {% assign posts_in_category = site.funding_by_category[category[0]] %}
+
+  {% if posts_in_category %}
+    <h3><i>{{ category[1].title }}</i></h3>
+    <ul>
+      {% for post in posts_in_category reversed %}
+        {% include archive-single-cv-fund.html %}
+      {% endfor %}
+    </ul>
+  {% endif %}
 {% endfor %}
-  
+
+
 [Teaching](https://bjorneju.github.io/teaching/)
 ======
+
 {% for category in site.teaching_category %}
-  {% assign posts_in_category = site.collections['teaching'].docs | where: "category", category.category %}
-  <i><h3>{{ category[1].title }}</h3></i>
-    <ul>{% for post in posts_in_category reversed %}
-    {% include archive-single-cv-teach.html %}
-  {% endfor %}</ul>
+  {% assign posts_in_category = site.teaching_by_category[category[0]] %}
+
+  {% if posts_in_category %}
+    <h3><i>{{ category[1].title }}</i></h3>
+    <ul>
+      {% for post in posts_in_category reversed %}
+        {% include archive-single-cv-teach.html %}
+      {% endfor %}
+    </ul>
+  {% endif %}
 {% endfor %}
-  
+
