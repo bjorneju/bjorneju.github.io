@@ -56,27 +56,30 @@ Skills
   * graph theory
   * complexity quantification
 
-Academic Contributions
+[Academic Contributions](https://bjorneju.github.io/publications/)
 ======
 {% for category in site.publication_category %}
-  <i>{{ category[1].title }}</i>
-    <ul>{% for post in posts_in_category reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-{% endfor %}
-
-Funding and awards
-======
-{% for category in site.funding_category %}
   <i>{{ category[1].title }}</i>
     <ul>{% for post in posts_in_category reversed %}
     {% include archive-single-cv-pub.html %}
   {% endfor %}</ul>
 {% endfor %}
-  
-Teaching
+
+[Funding and awards](https://bjorneju.github.io/funding/)
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
+{% for category in site.funding_category %}
+  <i>{{ category[1].title }}</i>
+    <ul>{% for post in posts_in_category reversed %}
+    {% include archive-single-cv-fund.html %}
   {% endfor %}</ul>
+{% endfor %}
+  
+[Teaching](https://bjorneju.github.io/teaching/)
+======
+{% for category in site.teaching_category %}
+  <i>{{ category[1].title }}</i>
+    <ul>{% for post in posts_in_category reversed %}
+    {% include archive-single-cv-teach.html %}
+  {% endfor %}</ul>
+{% endfor %}
   

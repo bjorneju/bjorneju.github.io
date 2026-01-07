@@ -1,0 +1,13 @@
+{% include base_path %}
+
+<div class="{{ include.type | default: "list" }}__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <li>
+    <h3 class="archive__item-title" itemprop="headline">
+
+        <a href="{{ post.linkurl }}">{{ title }}</a>
+    </h3>
+    <p class="archive__item-excerpt" itemprop="description">{{ post.amount }} from {{ post.organization }}</p> {% endif %}
+    </li>
+ </article>
+</div>
