@@ -62,9 +62,8 @@ Skills
 ======
 
 {% for category in site.publication_category %}
-  {% assign posts_in_category = site.publications_by_category[category[0]] %}
-
-  {% if posts_in_category %}
+  {% assign posts_in_category = site.publications | where: "category", category[0] %}
+  {% if posts_in_category.size > 0 %}
     <h3><i>{{ category[1].title }}</i></h3>
     <ul>
       {% for post in posts_in_category reversed %}
@@ -78,9 +77,8 @@ Skills
 ======
 
 {% for category in site.funding_category %}
-  {% assign posts_in_category = site.funding_by_category[category[0]] %}
-
-  {% if posts_in_category %}
+  {% assign posts_in_category = site.funding | where: "category", category[0] %}
+  {% if posts_in_category.size > 0 %}
     <h3><i>{{ category[1].title }}</i></h3>
     <ul>
       {% for post in posts_in_category reversed %}
@@ -90,14 +88,12 @@ Skills
   {% endif %}
 {% endfor %}
 
-
 [Teaching](https://bjorneju.github.io/teaching/)
 ======
 
 {% for category in site.teaching_category %}
-  {% assign posts_in_category = site.teaching_by_category[category[0]] %}
-
-  {% if posts_in_category %}
+  {% assign posts_in_category = site.teaching | where: "category", category[0] %}
+  {% if posts_in_category.size > 0 %}
     <h3><i>{{ category[1].title }}</i></h3>
     <ul>
       {% for post in posts_in_category reversed %}
@@ -106,4 +102,5 @@ Skills
     </ul>
   {% endif %}
 {% endfor %}
+
 
