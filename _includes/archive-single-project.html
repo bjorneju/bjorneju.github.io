@@ -6,7 +6,7 @@
     </h2>
 
     <!-- Project metadata: started year, leader, collaborators, role -->
-    <p>
+    <p><i>
       {% if post.status == "potential" %}
         Planned for the future
       {% else %}
@@ -14,7 +14,7 @@
       {% endif %}
       {% if post.leader %}, lead by {{ post.leader }}{% endif %}
       {% if post.collaborators %}, in collaboration with {{ post.collaborators }}{% endif %}
-    </p>
+    </i></p>
 
     <!-- Project excerpt -->
     {% if post.excerpt == "TBD" %}
