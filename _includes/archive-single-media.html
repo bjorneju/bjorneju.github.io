@@ -1,10 +1,7 @@
 {% include base_path %}
 
 <div class="archive__item">
-    <!-- 1) Title -->
-    <h2>
-      {{ post.title }}
-    </h2>
+    <h2>{{ post.title }}</h2>
 
     <!-- 2) Date as subheading -->
     {% if post.date %}
@@ -28,6 +25,4 @@
         </a>
       </p>
     {% endif %}
-
-  </article>
 </div>
