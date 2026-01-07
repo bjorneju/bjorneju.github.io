@@ -87,6 +87,13 @@ redirect_from:
   </li>
 </ul>
 
+<h2>Debug Publications</h2>
+<ul>
+{% for doc in site.collections['publications'].docs %}
+  <li>{{ doc.title }} — category: {{ doc.category }}</li>
+{% endfor %}
+</ul>
+
 <h2>Academic Contributions</h2>
 
 <div class="cv-section">
