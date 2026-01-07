@@ -6,6 +6,9 @@ author_profile: true
 redirect_from:
   - /resume
 ---
+
+{% include base_path %}
+
 <p><a href="{{ base_path }}/files/cv_2026_juel.pdf" target="_blank">Download CV (PDF)</a></p>
 
 <h2>Education</h2>
@@ -22,7 +25,7 @@ redirect_from:
     <strong>Dec 2023 - Current:</strong> Senior researcher and Project Leader
     <ul>
       <li>Kongsberg Hospital, Vestre Viken Health Trust</li>
-      <li>Duties include: Leading a research project funded by the Norwegian Research Council</li>
+      <li>Duties: Leading a research project funded by the Norwegian Research Council</li>
       <li>Closest leader: Gernot Ernst, PhD, MD</li>
     </ul>
   </li>
@@ -30,7 +33,7 @@ redirect_from:
     <strong>2019 - 2023:</strong> PostDoctoral Researcher (50%)
     <ul>
       <li>University of Oslo</li>
-      <li>Duties included: Carrying out empirical tests of scientific theories of consciousness with human subjects</li>
+      <li>Duties: Empirical tests of scientific theories of consciousness with human subjects</li>
       <li>Supervisor: Prof Johan F. Storm, MD, PhD</li>
     </ul>
   </li>
@@ -38,7 +41,7 @@ redirect_from:
     <strong>2019 - 2023:</strong> PostDoctoral Researcher (50%)
     <ul>
       <li>University of Wisconsin - Madison</li>
-      <li>Duties included: Developing and disseminating a scientific theory of consciousness (see e.g. <a href="https://www.iit.wiki" target="_blank">IIT-wiki</a>)</li>
+      <li>Duties: Developing and disseminating a scientific theory of consciousness (<a href="https://www.iit.wiki" target="_blank">IIT-wiki</a>)</li>
       <li>Supervisor: Prof Giulio Tononi, MD, PhD</li>
     </ul>
   </li>
@@ -46,7 +49,7 @@ redirect_from:
     <strong>2019 - 2023:</strong> PhD Candidate
     <ul>
       <li>University of Oslo</li>
-      <li>Duties included: Developing and testing objective measures of consciousness with empirical and theoretical studies.</li>
+      <li>Duties: Developing and testing objective measures of consciousness with empirical and theoretical studies</li>
       <li>Supervisor: Prof Johan F. Storm, MD, PhD</li>
     </ul>
   </li>
@@ -90,7 +93,7 @@ redirect_from:
 <div class="cv-section">
   {% assign publication_docs = site.collections['publications'].docs %}
   {% for cat_key, cat_val in site.publication_category %}
-    {% assign group = publication_docs | where: "category", cat_key %}
+    {% assign group = publication_docs | where: "category", cat_key | default: [] %}
     {% if group.size > 0 %}
       <h3>{{ cat_val.title }}</h3>
       <ul>
@@ -109,21 +112,16 @@ redirect_from:
 </div>
 
 <h2>Funding and Awards (<a href="/funding/">all funding</a>)</h2>
-
 <div class="cv-section">
   {% assign funding_docs = site.collections['funding'].docs %}
   {% for cat_key, cat_val in site.funding_category %}
-    {% assign group = funding_docs | where: "category", cat_key %}
+    {% assign group = funding_docs | where: "category", cat_key | default: [] %}
     {% if group.size > 0 %}
       <h3>{{ cat_val.title }}</h3>
       <ul>
         {% for post in group reversed %}
           <li>
-            {% if post.amount and post.organization %}
-              {{ post.title }} ({{ post.amount }} from {{ post.organization }})
-            {% else %}
-              {{ post.title }}
-            {% endif %}
+            {{ post.title }}{% if post.amount and post.organization %} ({{ post.amount }} from {{ post.organization }}){% endif %}
           </li>
         {% endfor %}
       </ul>
@@ -131,13 +129,11 @@ redirect_from:
   {% endfor %}
 </div>
 
-
 <h2>Teaching (<a href="/teaching/">all teaching</a>)</h2>
-
 <div class="cv-section">
   {% assign teaching_docs = site.collections['teaching'].docs %}
   {% for cat_key, cat_val in site.teaching_category %}
-    {% assign group = teaching_docs | where: "category", cat_key %}
+    {% assign group = teaching_docs | where: "category", cat_key | default: [] %}
     {% if group.size > 0 %}
       <h3>{{ cat_val.title }}</h3>
       <ul>
