@@ -5,12 +5,12 @@ permalink: /media/
 author_profile: true
 ---
 
-{% assign total_media = site.media | size %}
-
 <p>
 I have been lucky enough to appear in the media several times over the years, 
 and I am very happy to contribute again. Just get in touch if you need me :) 
 </p>
+
+{% include base_path %}
 
 {% if site.media_category %}
   {% for category in site.media_category %}
