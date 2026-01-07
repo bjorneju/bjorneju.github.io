@@ -44,7 +44,7 @@ Skills
 ======
 
 * Supervision and teaching
-  * Licenced lecturer in natural sciences
+  * Licensed lecturer in natural sciences
   * supervised several students at MSc and PhD level
 * Experimental planning and execution
   * Set up and successfully complete complex research projects
