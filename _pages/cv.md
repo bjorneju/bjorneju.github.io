@@ -70,7 +70,7 @@ Funding and awards
 {% for category in site.funding_category %}
   <i>{{ category[1].title }}</i>
     <ul>{% for post in posts_in_category reversed %}
-    {% include archive-single-cv.html %}
+    {% include archive-single-cv-pub.html %}
   {% endfor %}</ul>
 {% endfor %}
   
