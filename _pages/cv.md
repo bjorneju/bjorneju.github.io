@@ -61,7 +61,8 @@ Skills
 [Academic Contributions](https://bjorneju.github.io/publications/)
 ======
 {% for category in site.publication_category %}
-  <i>{{ category[1].title }}</i>
+  {% assign posts_in_category = site.publications | where: "category", category[0] %}
+  <i><h3>{{ category[1].title }}</h3></i>
     <ul>{% for post in posts_in_category reversed %}
     {% include archive-single-cv-pub.html %}
   {% endfor %}</ul>
@@ -70,7 +71,8 @@ Skills
 [Funding and awards](https://bjorneju.github.io/funding/)
 ======
 {% for category in site.funding_category %}
-  <i>{{ category[1].title }}</i>
+  {% assign posts_in_category = site.funding | where: "category", category[0] %}
+  <i><h3>{{ category[1].title }}</h3></i>
     <ul>{% for post in posts_in_category reversed %}
     {% include archive-single-cv-fund.html %}
   {% endfor %}</ul>
@@ -79,7 +81,8 @@ Skills
 [Teaching](https://bjorneju.github.io/teaching/)
 ======
 {% for category in site.teaching_category %}
-  <i>{{ category[1].title }}</i>
+  {% assign posts_in_category = site.teaching | where: "category", category[0] %}
+  <i><h3>{{ category[1].title }}</h3></i>
     <ul>{% for post in posts_in_category reversed %}
     {% include archive-single-cv-teach.html %}
   {% endfor %}</ul>
