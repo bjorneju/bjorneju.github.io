@@ -1,0 +1,139 @@
+---
+layout: archive
+title: "CV"
+permalink: /cv/
+author_profile: true
+redirect_from:
+  - /resume
+---
+
+<p><a href="{{ base_path }}/files/cv_2026_juel.pdf" target="_blank">Download CV (PDF)</a></p>
+
+<h2>Education</h2>
+<ul>
+  <li>Ph.D in Neuroscience of Consciousness, University of Oslo, 2020 (expected)</li>
+  <li>Lecturer in Natural Science, Physics, and Mathematics, Norwegian University of Life Sciences, 2014</li>
+  <li>M.Sc. in Theoretical Neuroscience, Norwegian University of Science and Technology, 2013</li>
+  <li>B.Sc. in Physics, University of Oslo, 2010</li>
+</ul>
+
+<h2>Work Experience</h2>
+<ul>
+  <li>
+    <strong>Dec 2023 - Current:</strong> Senior researcher and Project Leader
+    <ul>
+      <li>Kongsberg Hospital, Vestre Viken Health Trust</li>
+      <li>Duties include: Leading a research project funded by the Norwegian Research Council</li>
+      <li>Closest leader: Gernot Ernst, PhD, MD</li>
+    </ul>
+  </li>
+  <li>
+    <strong>2019 - 2023:</strong> PostDoctoral Researcher (50%)
+    <ul>
+      <li>University of Oslo</li>
+      <li>Duties included: Carrying out empirical tests of scientific theories of consciousness with human subjects</li>
+      <li>Supervisor: Prof Johan F. Storm, MD, PhD</li>
+    </ul>
+  </li>
+  <li>
+    <strong>2019 - 2023:</strong> PostDoctoral Researcher (50%)
+    <ul>
+      <li>University of Wisconsin - Madison</li>
+      <li>Duties included: Developing and disseminating a scientific theory of consciousness (see e.g. <a href="https://www.iit.wiki" target="_blank">IIT-wiki</a>)</li>
+      <li>Supervisor: Prof Giulio Tononi, MD, PhD</li>
+    </ul>
+  </li>
+  <li>
+    <strong>2019 - 2023:</strong> PhD Candidate
+    <ul>
+      <li>University of Oslo</li>
+      <li>Duties included: Developing and testing objective measures of consciousness with empirical and theoretical studies.</li>
+      <li>Supervisor: Prof Johan F. Storm, MD, PhD</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Skills</h2>
+<ul>
+  <li>
+    <strong>Supervision and teaching</strong>
+    <ul>
+      <li>Licensed lecturer in natural sciences</li>
+      <li>Supervised several students at MSc and PhD level</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Experimental planning and execution</strong>
+    <ul>
+      <li>Set up and successfully complete complex research projects</li>
+      <li>Supervise novice students through a full research cycle</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Multidisciplinary collaboration</strong>
+    <ul>
+      <li>Well versed in teamwork and leadership of teams with diverse backgrounds</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Analysis of time-series data, e.g.:</strong>
+    <ul>
+      <li>Multivariate autoregressive modeling</li>
+      <li>Time-frequency decompositions</li>
+      <li>Causal analysis</li>
+      <li>Graph theory</li>
+      <li>Complexity quantification</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>Academic Contributions</h2>
+
+<div class="cv-section">
+  {% assign publication_docs = site.collections['publications'].docs %}
+  {% for category in site.publication_category %}
+    {% assign group = publication_docs | where: "category", category[0] %}
+    {% if group.size > 0 %}
+      <h3>{{ category[1].title }}</h3>
+      <ul>
+        {% for post in group reversed %}
+          {% include archive-single-cv-pub.html %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endfor %}
+<div>
+
+<h2>Funding and awards</h2>
+
+<div class="cv-section">
+  {% assign funding_docs = site.collections['funding'].docs %}
+  {% for category in site.funding_category %}
+    {% assign group = funding_docs | where: "category", category[0] %}
+    {% if group.size > 0 %}
+      <h3>{{ category[1].title }}</h3>
+      <ul>
+        {% for post in group reversed %}
+          {% include archive-single-cv-fund.html %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endfor %}
+<div>
+
+<h>Teaching</h2>
+
+<div class="cv-section">
+  {% assign teaching_docs = site.collections['teaching'].docs %}
+  {% for category in site.teaching_category %}
+    {% assign group = teaching_docs | where: "category", category[0] %}
+    {% if group.size > 0 %}
+      <h3>{{ category[1].title }}</h3>
+      <ul>
+        {% for post in group reversed %}
+          {% include archive-single-cv-teach.html %}
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endfor %}
+<div>
