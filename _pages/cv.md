@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+[Download CV (PDF)]({{ base_path }}/files/cv_2026_juel.pdf)
+
 Education
 ======
 * Ph.D in Neuroscience of Consciousness, University of Oslo, 2020 (expected)
