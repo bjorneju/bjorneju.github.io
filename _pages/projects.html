@@ -5,13 +5,13 @@ permalink: /projects/
 author_profile: true
 ---
 
-{% include base_path %}
-
 <p>
 My collaborators and I have had many productive, fun, and interesting projects over the years. 
 We still have some of them up and running, and are always looking for collaborators. 
 Have a look at what we are doing, what we have done, and what we are eager to do, and get in touch if any of it tickles your fancy!
 </p>
+
+{% include base_path %}
 
 {% if site.projects_category %}
   {% for category in site.projects_category %}
@@ -19,7 +19,6 @@ Have a look at what we are doing, what we have done, and what we are eager to do
     {% if posts_in_category.size > 0 %}
       <details>
         <summary>{{ category[1].title }}</summary>
-        {% assign title_shown = false %}
         {% for post in posts_in_category reversed %}
           {% unless title_shown %}
             <hr />

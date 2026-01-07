@@ -1,15 +1,8 @@
 {% include base_path %}
 
 <div class="archive__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-
-    <!-- Project title -->
-    <h2 class="archive__item-title" itemprop="headline">
-      {% if post.external_url %}
-        <a href="{{ post.external_url }}" target="_blank" rel="noopener">{{ post.title }}</a>
-      {% else %}
-        {{ post.title }}
-      {% endif %}
+    <h2>
+      {{ post.title }}
     </h2>
 
     <!-- Project metadata: started year, leader, collaborators, role -->
@@ -33,12 +26,12 @@
     <!-- Project content / more details -->
     {% if post.content %}
       <details>
-        <summary>More details</summary>
-        <div class="archive__item-content">
+        <summary>Summary</summary>
+        <p>
           {{ post.content | markdownify }}
-        </div>
+        </p>
       </details>
     {% endif %}
 
-  </article>
+    <a href="{{ post.external_url }}" target="_blank" rel="noopener">Click here for further details</a>
 </div>
