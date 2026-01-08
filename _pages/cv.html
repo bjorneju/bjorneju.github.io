@@ -78,7 +78,7 @@ redirect_from:
     </ul>
   </li>
   <li>
-    <strong>Analysis of time-series data, e.g.:</strong>
+    <strong>Analysis of multivariate timeseries data, e.g.:</strong>
     <ul>
       <li>Multivariate autoregressive modeling</li>
       <li>Time-frequency decompositions</li>
@@ -90,74 +90,39 @@ redirect_from:
 </ul>
 
 <h2>Academic Contributions</h2>
-<div class="cv-section">
-  {% assign publication_docs = site.collections['publications'].docs %}
-  {% for category in site.publication_category %}
-    {% assign cat_key = category[0] %}
-    {% assign cat_val = category[1] %}
-    {% assign group = publication_docs | where: "category", cat_key | default: [] %}
+<p>See <a href="/publications/">the academic contributions page</a> for a complete overview.</p>
 
-    {% if group.size > 0 %}
-      <h3>{{ cat_val.title }}</h3>
-      <ul>
-        {% for post in group reversed %}
-          <li>
-            {% if post.venue %}
-              {{ post.title }} in {{ post.venue }}
-            {% else %}
-              {{ post.title }}
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
-  {% endfor %}
-</div>
+<h2>Funding and Awards </h2>
+<p>See <a href="/funding/">the funding page</a> for a complete overview.</p>
 
-<h2>Funding and Awards (<a href="/funding/">all funding</a>)</h2>
-<div class="cv-section">
-  {% assign funding_docs = site.collections['funding'].docs %}
-  {% for category in site.funding_category %}
-    {% assign cat_key = category[0] %}
-    {% assign cat_val = category[1] %}
-    {% assign group = funding_docs | where: "category", cat_key | default: [] %}
+<h2>Teaching </h2>
+<p>See <a href="/teaching/">the teaching page</a> for a complete overview.</p>
 
-    {% if group.size > 0 %}
-      <h3>{{ cat_val.title }}</h3>
-      <ul>
-        {% for post in group reversed %}
-          <li>
-            {{ post.title }}{% if post.amount and post.organization %} ({{ post.amount }} from {{ post.organization }}){% endif %}
-          </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
-  {% endfor %}
-</div>
+<h2>Languages</h2>
+<ul>
+  <li><strong>Norwegian</strong>: Mother tongue</li>
+  <li><strong>English</strong>: Fluent (main language for 15 years)</li>
+  <li><strong>Portuguese</strong>: Conversational</li>
+</ul>
 
-<h2>Teaching (<a href="/teaching/">all teaching</a>)</h2>
-<div class="cv-section">
-  {% assign teaching_docs = site.collections['teaching'].docs %}
-  {% for category in site.teaching_category %}
-    {% assign cat_key = category[0] %}
-    {% assign cat_val = category[1] %}
-    {% assign group = teaching_docs | where: "category", cat_key | default: [] %}
+<h2>Memberships in societies</h2>
+<ul>
+  <li><strong>Norwegian Neuroscience Society</strong> (member, 2014-18, 2025-)</li>
+  <li><strong>The BCI Soceiety</strong> (member, 2025-)</li>
+  <li><strong>Association for Mathematical Consciousness Science</strong> (invited member, 2021-)</li>
+  <li><strong>Association for the Scientific Study of Consciousness</strong> (member, 2018-)</li>
+  <li><strong>Norwegian Neuroscience Society</strong> (2014-18, 2025-)</li>
+  <li><strong>Society for Neuroscience</strong> (2017-2018)</li>
+  <li><strong> Federation for European Neuroscience Societies</strong> (member, 2014-2018)</li>
+</ul>
 
-    {% if group.size > 0 %}
-      <h3>{{ cat_val.title }}</h3>
-      <ul>
-        {% for post in group reversed %}
-          <li>
-            {% assign info = "" %}
-            {% if post.year %}{% assign info = info | append: post.year %}{% endif %}
-            {% if post.venue %}
-              {% if info != "" %}{% assign info = info | append: ", " %}{% endif %}
-              {% assign info = info | append: post.venue %}
-            {% endif %}
-            {{ post.title }}{% if info != "" %} ({{ info }}){% endif %}
-          </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
-  {% endfor %}
-</div>
+<h2>Institutional responsibilities</h2>
+<ul>
+  <li>2nd Rep. for the Scientific Employees, Council for the Medical Department, University 
+of Oslo (UiO, 2015-2017)</li>
+  <li>Accountant and Board member, Student Organization for Master Students at the 
+Medical Faculty (NTNU, 2011-2012)</li>
+  <li>Board member, Fysikkforeningen (UiO, 2008-2010)</li>
+  <li>Board member, Fysisk fagutvalg (UiO, 2008)</li>
+</ul>
+
