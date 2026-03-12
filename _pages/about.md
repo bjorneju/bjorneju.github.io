@@ -26,8 +26,17 @@ Bjørn
 
 
 <div class="homepage-grid">
-
-  <!-- Card 1: IIT Wiki -->
+  <!-- Card: Tool to search for journals your Norwegian institution has agreements with -->
+  <div class="grid-card">
+    <a href="https://huggingface.co/spaces/bjorneju/kanalregister" target="_blank" rel="noopener">
+      <img src="/images/kanalregister.png" alt="Open Access Journal Finder" class="grid-image">
+    </a>
+    <div class="grid-text">
+      <strong>Open Access Journal Finder</strong>
+      <p>Find journals available through your Norwegian institution's open-access publishing agreements, ranked by relevance to your research using semantic search.</p>
+    </div>
+  </div>
+  <!-- Card 2: IIT Wiki -->
   <div class="grid-card">
     <a href="https://www.iit.wiki/" target="_blank" rel="noopener">
       <img src="/images/iitwiki.png" alt="IIT Wiki" class="grid-image">
@@ -38,7 +47,7 @@ Bjørn
     </div>
   </div>
 
-  <!-- Card 2: PhD Thesis -->
+  <!-- Card 3: PhD Thesis -->
   <div class="grid-card">
     <a href="https://www.duo.uio.no/bitstream/handle/10852/67903/PhD-Juel-DUO.pdf" target="_blank" rel="noopener">
       <img src="/images/phd-thumbnail.png" alt="PhD Thesis" class="grid-image">
@@ -49,7 +58,7 @@ Bjørn
     </div>
   </div>
 
-  <!-- Card 3: Video Lecture -->
+  <!-- Card 4: Video Lecture -->
   <div class="grid-card">
     <iframe width="100%" src="https://www.youtube.com/embed/A4McCxIz7ng?si=AhgeHhqqpt490Mlp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <div class="grid-text">
