@@ -19,7 +19,7 @@ Bjørn
 <div style="margin-top:5rem;"></div>
 
 <p style="text-align:center; margin-top:3rem; font-size:1.1rem;">
-⬇ Below is some ontent from this page to get you started ⬇
+⬇ Below is some content from this page to get you started ⬇
 </p>
 
 <div style="margin-top:5rem;"></div>
